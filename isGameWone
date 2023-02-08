@@ -1,0 +1,18 @@
+public boolean isGameWon() {
+            /** Check for win in rows */
+            /*
+            for (int i = 0; i < 3; i++) {
+                int rowValue1 = (GAME_STATE >> ((i * 3) * 2)) & (BINARY_11);
+                int rowValue2 = (GAME_STATE >> ((i * 3 + 1) * 2)) & (BINARY_11);
+                int rowValue3 = (GAME_STATE >> ((i * 3 + 1) * 2)) & (BINARY_11);
+                if (rowValue1 != 0
+                        && rowValue1 == rowValue2
+                        && rowValue1 == rowValue3
+                ) {
+                    return true;
+                }
+            }
+            */
+
+            return false;
+        }
