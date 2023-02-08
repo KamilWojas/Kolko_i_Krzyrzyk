@@ -1,0 +1,9 @@
+ private boolean isIndexValid(String inputIndex) {
+            try {
+                int index = Integer.parseInt(inputIndex) - 1;
+                int checkValue = BINARY_11 << (index * 2);
+                return ((GAME_STATE & checkValue) == 0) && index <= 9;
+            } catch (Exception ex) {
+                return false;
+            }
+        }
