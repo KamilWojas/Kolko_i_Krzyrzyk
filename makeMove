@@ -1,0 +1,12 @@
+public void makeMove(Player player, int index) {
+            int player_binary_value;
+            if (player == Player.X) {
+                player_binary_value = BINARY_11;
+            } else {
+                player_binary_value = BINARY_01;
+            }
+
+            int operationResult = player_binary_value << (index * 2);
+
+            GAME_STATE = GAME_STATE | operationResult;
+        }
